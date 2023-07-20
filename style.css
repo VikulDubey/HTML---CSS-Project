@@ -342,10 +342,20 @@ header {
   gap: 1rem;
   color: var(--primary-text-color);
 }
+.subfooter a {
+  color: black;
+}
+.subfooter a:hover{
+  color: var(--accent-color);
+  transition: 0.3s ease-out;
+}
 
 /* Media Queries  */
 
 @media only screen and (max-width: 992px) {
+ .nest-hub-width{
+  flex-direction: column;
+ }
   /* Utility Class  */
   .container {
     max-width: 100% !important;
@@ -509,8 +519,6 @@ header {
   }
 }
 
-
-
 /* Toggle Class  */
 .hamburger-class {
   display: block;
@@ -520,15 +528,15 @@ header {
   right: 0;
   width: 100%;
   background-color: white;
-  animation: transitionproperty-1 0.5s ;
+  animation: transitionproperty-1 0.5s;
 }
 
 /* Animation  */
 @keyframes transitionproperty-1 {
-  0%{
+  0% {
     top: 2rem;
   }
-  100%{
-    top:3rem;
+  100% {
+    top: 3rem;
   }
 }
